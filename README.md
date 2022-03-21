@@ -14,3 +14,7 @@ To view the username and password in RMM:
 - Locate the "Create admin account" script (or whatever you named) and click the "Output" for the script.
 
 
+The script allows you to use a custom word list and special character list for the passwords. By using a word list and only certain special characters, you can easily communicate the temporary password over the phone if necessary.
+
+![Screenshot1](/screenshots/rmm-create-temp-admin1.png)
+![Screenshot2](/screenshots/rmm-create-temp-admin-result.png)
