@@ -21,7 +21,7 @@ $wordlist = @(
   ,"administration"
 )
 
-# These special characters are easier to communicate over the phone. No one knows what a "tilda ~" symbol is, hah.
+# These special characters are easier to communicate over the phone. No one knows what a "tilde ~" symbol is, hah.
 $specialList = @(
   "!" # exclamation point
   ,"@" # at symbol
