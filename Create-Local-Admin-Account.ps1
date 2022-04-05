@@ -41,9 +41,8 @@ $randomPassword += (-join ((65..90) + (97..122) | Get-Random -Count 4 | % {[char
 # Convert to secure password so it can be sent to new-localuser command
 $securedPassword = ConvertTo-SecureString -string $randomPassword -AsPlainText -Force
 
-# Expire the account by default in x hours
-# Default is for 10 hours. So if this script runs at 7am daily, the account will expire at 5pm (End of day).
-$accountExpires = (get-date).AddHours(10)
+# Expire the account by default at 5:30 PM according to the local system time.
+$accountExpires = (get-date).ToShortDateString() + " 05:30:00 PM"
 
 # Create the account
 New-LocalUser -Name $adminUser -Password $securedPassword -AccountExpires $accountExpires -UserMayNotChangePassword -ErrorAction SilentlyContinue | Out-Null
