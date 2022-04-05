@@ -8,7 +8,6 @@ $adminUser = "tadmin" + (get-random -Minimum 10 -Maximum 999) # tadmin<number>
 
 #############################################################################
 ## Custom to your liking. Using a wordlist gives us a slightly easier to type password. Shouldn't be public, because it reduces randomness/security.
-## Someone could run some analysis on machines they have a foot hold in to create the word list, and then brute force just the special char and the random number/letter combination.
 ## PW security estimate = wordlist count  X special List count X 899 X 50^4
 $wordlist = @(
   "chicken"
