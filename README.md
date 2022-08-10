@@ -14,8 +14,10 @@ To view the username and password in RMM:
 - Click on the "Tasks"
 - Locate the "Create admin account" script (or whatever you named) and click the "Output" for the script.
 
-
 The script allows you to use a custom word list and special character list for the passwords. By using a word list and only certain special characters, you can easily communicate the temporary password over the phone if necessary.
+
+## Notes
+When logging into a machine, you must prefix the username with a dot slash (EG: .\tadmin101) or the login may fail. This dot slash tells the login to use a local user account.
 
 ![Screenshot1](/screenshots/rmm-create-temp-admin1.png)
 ![Screenshot2](/screenshots/rmm-create-temp-admin-result.png)
